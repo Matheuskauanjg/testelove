@@ -15,33 +15,88 @@
     
     <main>
         <form id="quiz-form">
+            <!-- Pergunta 1 -->
             <div class="question">
                 <p>1. Onde foi nosso primeiro encontro?</p>
                 <label>
-                    <input type="radio" name="q1" value="10"> Em um parque
+                    <input type="radio" name="q1" value="0"> Em um parque
                 </label><br>
                 <label>
-                    <input type="radio" name="q1" value="0"> No cinema
+                    <input type="radio" name="q1" value="10"> No cinema
                 </label><br>
                 <label>
                     <input type="radio" name="q1" value="0"> No restaurante
                 </label>
             </div>
             
+            <!-- Pergunta 2 -->
             <div class="question">
                 <p>2. Qual a nossa música favorita?</p>
                 <label>
-                    <input type="radio" name="q2" value="0"> Música X
+                    <input type="radio" name="q2" value="0"> Speedplug
                 </label><br>
                 <label>
-                    <input type="radio" name="q2" value="10"> Música Y
+                    <input type="radio" name="q2" value="10"> Doomshop
                 </label><br>
                 <label>
-                    <input type="radio" name="q2" value="0"> Música Z
+                    <input type="radio" name="q2" value="0"> Boombad
                 </label>
             </div>
 
-            <button type="submit">Enviar Respostas</button>
+            <!-- Pergunta 3 -->
+            <div class="question">
+                <p>3. Qual é o meu maior medo?</p>
+                <label>
+                    <input type="radio" name="q3" value="10"> Te perder
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="0"> Altura
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="0"> Escuro
+                </label>
+            </div>
+
+            <!-- Outras perguntas... -->
+            <div class="question">
+                <p>4. Eu acredito em alma gêmea?</p>
+                <label>
+                    <input type="radio" name="q4" value="10"> Sim
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="0"> Não
+                </label>
+            </div>
+
+            <div class="question">
+                <p>5. Qual a minha cor preferida?</p>
+                <label>
+                    <input type="radio" name="q5" value="10"> Dourado
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="0"> Azul
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="0"> Preto
+                </label>
+            </div>
+
+            <div class="question">
+                <p>6. Qual é o lugar que eu mais gosto no mundo?</p>
+                <label>
+                    <input type="radio" name="q6" value="10"> Sua cama
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="0"> Na praia
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="0"> No campo
+                </label>
+            </div>
+
+            <!-- Continue com as perguntas restantes -->
+
+            <button type="submit" class="submit-btn">Enviar Respostas</button>
         </form>
 
         <div id="resultado" style="display:none; margin-top: 20px;">
