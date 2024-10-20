@@ -3,25 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartas Virtuais</title>
+    <title>Cartas de Amor</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="cartas.js"></script> <!-- Link para o JavaScript -->
 </head>
 <body>
     <header>
-        <h1>Cartas Virtuais para Você</h1>
+        <h1>Cartas de Amor para Você</h1>
+        <p>Cada carta guarda um pedaço do meu coração, feito especialmente para você.</p>
     </header>
     
     <main>
         <section class="cartas">
-            <article>
-                <h2>Carta 1: O começo de tudo</h2>
-                <p>[Aqui vai a primeira carta, com uma mensagem pessoal]</p>
-            </article>
-            <article>
-                <h2>Carta 2: Momentos inesquecíveis</h2>
-                <p>[Aqui vai a segunda carta]</p>
-            </article>
+            <!-- Carta 1 -->
+            <div class="carta" data-id="1">
+                <h2>Carta 1: O início de tudo</h2>
+            </div>
+
+            <!-- Carta 2 -->
+            <div class="carta" data-id="2">
+                <h2>Carta 2: Meu porto seguro</h2>
+            </div>
+
+            <!-- Carta 3 -->
+            <div class="carta" data-id="3">
+                <h2>Carta 3: Nosso futuro juntos</h2>
+            </div>
+
+            <!-- Carta 4 -->
+            <div class="carta" data-id="4">
+                <h2>Carta 4: Você é meu tudo</h2>
+            </div>
+
+            <!-- Carta 5 -->
+            <div class="carta" data-id="5">
+                <h2>Carta 5: Nossos momentos inesquecíveis</h2>
+            </div>
+
+            <!-- Carta 6 -->
+            <div class="carta" data-id="6">
+                <h2>Carta 6: Quando estou longe de você</h2>
+            </div>
+
+            <!-- Carta 7 -->
+            <div class="carta" data-id="7">
+                <h2>Carta 7: Minha inspiração</h2>
+            </div>
+
+            <!-- Carta 8 -->
+            <div class="carta" data-id="8">
+                <h2>Carta 8: Nosso amor é único</h2>
+            </div>
+
+            <!-- Carta 9 -->
+            <div class="carta" data-id="9">
+                <h2>Carta 9: A razão do meu sorriso</h2>
+            </div>
+
+            <!-- Carta 10 -->
+            <div class="carta" data-id="10">
+                <h2>Carta 10: Para sempre nós dois</h2>
+            </div>
         </section>
+
+        <!-- Mensagem ao clicar na carta -->
+        <div id="mensagem" class="mensagem-oculta">
+            <p id="conteudo-mensagem"></p>
+            <button id="fechar-btn">Fechar Carta</button>
+        </div>
     </main>
 
     <footer>
