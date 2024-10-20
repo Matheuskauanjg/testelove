@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz do Relacionamento</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="quiz.js"></script> <!-- Link para o JavaScript -->
 </head>
 <body>
     <header>
@@ -16,20 +17,36 @@
         <form id="quiz-form">
             <div class="question">
                 <p>1. Onde foi nosso primeiro encontro?</p>
-                <input type="radio" name="q1" value="a"> Em um parque <br>
-                <input type="radio" name="q1" value="b"> No cinema <br>
-                <input type="radio" name="q1" value="c"> No restaurante <br>
+                <label>
+                    <input type="radio" name="q1" value="10"> Em um parque
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="0"> No cinema
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="0"> No restaurante
+                </label>
             </div>
             
             <div class="question">
                 <p>2. Qual a nossa música favorita?</p>
-                <input type="radio" name="q2" value="a"> Música X <br>
-                <input type="radio" name="q2" value="b"> Música Y <br>
-                <input type="radio" name="q2" value="c"> Música Z <br>
+                <label>
+                    <input type="radio" name="q2" value="0"> Música X
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="10"> Música Y
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="0"> Música Z
+                </label>
             </div>
 
             <button type="submit">Enviar Respostas</button>
         </form>
+
+        <div id="resultado" style="display:none; margin-top: 20px;">
+            <h2>Resultado: <span id="pontuacao">0</span> pontos!</h2>
+        </div>
     </main>
 
     <footer>
